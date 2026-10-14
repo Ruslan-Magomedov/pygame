@@ -18,12 +18,12 @@ running = True
 
 # Шары
 balls = []
-for i in range(1000):
+for i in range(1200):
     balls.append(Circle.Circle(
         x=random.randint(settings.MAX_R, settings.WIDTH-settings.MAX_R),
         y=random.randint(settings.MAX_R, settings.HEGHT-settings.MAX_R),
-        speed_x=random.randint(settings.MAX_S*-1, settings.MAX_S),
-        speed_y=random.randint(settings.MAX_S*-1, settings.MAX_S),
+        speed_x = random.uniform(-1.5, 1.5),
+        speed_y = random.uniform(-1.5, 1.5),
         radius=random.randint(settings.MIN_R, settings.MAX_R),
         color=random.choice(settings.CC)
     ))
