@@ -29,7 +29,7 @@ for i in range(1000):
     ))
 
 # инициализация позиции мышки
-mx, my = pg.mouse.get_pos()
+mx, my = settings.WIDTH / 2, settings.HEGHT / 2
 
 
 
